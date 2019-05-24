@@ -1,0 +1,26 @@
+<% include partials/header %>
+
+<style type="text/css">
+  #signup {
+           color: white;
+           font-weight: bold;
+          }
+</style>
+
+<div class="container">
+ <br/>
+ <h3 class="text-center">SIGNUP</h3>
+ <form action="/signup" method="POST">
+    <div class="form-group">
+        <label for="user">User Name</label>
+        <input type="text" name="username" class="form-control" id="user">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" class="form-control" id="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+ </form>
+</div>
+
+<% include partials/footer %>
